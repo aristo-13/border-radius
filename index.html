@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-radius generator</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/5071953267.js" crossorigin="anonymous"></script>
+    <script defer src="/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box-area">
+            <div class="box"></div>
+        </div>
+        <div class="controls">
+            <label for="b-rad">Border Radius</label>
+            <input type="range" min="1" max="100" value="0" step="1" id="b-rad">
+            <div class="corners">
+                <div class="con">
+                    <label for="UR">upper left</label>
+                    <input type="range" min="1" max="100" value="0" step="1" id="UR">
+                </div>
+                <div class="con">
+                    <label for="UL">upper right</label>
+                    <input type="range" min="1" max="100" value="0" step="1" id="UL">
+                </div>
+                
+                <div class="con">
+                    <label for="BR">Bottom right</label>
+                <input type="range" min="1" max="100" value="0" step="1" id="BR">
+                </div>
+               <div class="con">
+                <label for="BL">Bottom left</label>
+                <input type="range" min="1" max="100" value="0" step="1" id="BL">
+               </div>
+               <div class="copy">
+                <input type="text" name="" id="copy" readonly>
+                <div class="pop">copied!</div>
+               </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>

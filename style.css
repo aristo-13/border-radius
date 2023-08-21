@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.corners div::selection{
+    background-color: transparent;
+}
+.box-area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.corners{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.box{
+    width: min(80%,250px);
+    height: 250px;
+    background-color: rgb(62, 62, 184);
+}
+.copy{
+   grid-column-start: 1;
+   grid-column-end: 3;
+   cursor: pointer;
+   position: relative;
+   overflow: hidden;
+}
+#copy{
+    width: 100%;
+    padding: 1rem;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-top: 1rem;
+   
+}
+#copy::selection{
+    border-color: transparent;
+}
+input[type='range']{
+    appearance: none;
+    height: 2px;
+    border: solid 1px;
+    border-radius: 20px;
+}
+.pop{
+    display: none;
+    background-color: rgb(225, 244, 225);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: rgb(27, 113, 243);
+    width: 75px;
+    padding: 0.3rem;
+    border-radius: 50px;
+    animation: fade 2s ease;
+}
+
+@keyframes fade {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
